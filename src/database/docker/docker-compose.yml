@@ -1,0 +1,17 @@
+#lutz
+version: "3"
+services: 
+  db:
+    image: postgres:alpine
+    # restart: always
+    container_name: dbtsauth
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      # POSTGRES_DB: tsauth
+    ports:
+         - 5432:5432/tcp
+    volumes:
+      - tsauth-data:/var/lib/postgres/data
+volumes:
+  tsauth-data:
