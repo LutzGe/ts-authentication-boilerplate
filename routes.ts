@@ -1,7 +1,7 @@
 import { Router } from "express";
-import AuthController from './app/controllers/AuthController'
-import UserController from './app/controllers/UserController'
-import authMiddleware from './app/middlewares/AuthMiddleware'
+import AuthController from './src/app/controllers/AuthController'
+import UserController from './src/app/controllers/UserController'
+import authMiddleware from './src/app/middlewares/AuthMiddleware'
 const router = Router()
 
 router.post('/users', UserController.store)

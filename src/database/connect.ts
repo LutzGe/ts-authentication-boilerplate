@@ -1,3 +1,4 @@
 import { createConnection } from "typeorm";
+import connectionOptions from './ormconfig'
 
-createConnection().then(() => console.log("Connected to database."))
+createConnection(connectionOptions).then(() => console.log("Connected to database."))
