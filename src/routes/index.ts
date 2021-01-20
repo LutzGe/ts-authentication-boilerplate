@@ -14,5 +14,4 @@ router.use('/users', UserRouter)
 
 router.post('/auth', AuthController.authenticate)
 
-
 export default router

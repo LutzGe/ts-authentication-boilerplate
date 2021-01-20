@@ -2,6 +2,7 @@ import { Request, Response } from 'express'
 import { getRepository, ILike } from 'typeorm'
 
 import User from '../models/User'
+
 class UserController {
 
     async index(req: Request, res: Response) {
