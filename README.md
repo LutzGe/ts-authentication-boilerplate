@@ -14,4 +14,4 @@
 ### For the database, I've created a simple docker container running postgreSQL.
 
 
-Author: [@LutzGe](https://github.com/LutzGe)
+Author: [@gelutz](https://github.com/gelutz)
